@@ -1,3 +1,149 @@
 .Auth {
+    display: flex;
     background: none;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 100px 40% 0% 40%;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.AuthBlack {
+    display: flex;
+    background: none;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    margin: 100px 40% 0% 40%;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.Auth h1 {
+    text-align: center;
+}
+.AuthBlack h1{
+    text-align: center;
+    color: white;
+}
+.Auth form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.AuthBlack form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Auth form input {
+    margin: 10px;
+    width: 90%;
+}
+.AuthBlack form input {
+    margin: 10px;
+    width: 90%;
+}
+.Auth form button {
+    margin: 15px;
+}
+.AuthBlack form button {
+    margin: 15px;
+}
+
+
+@media (max-width: 1200px) {
+    .Auth h1 {
+        text-align: center;
+        font-size: 21px;
+    }
+    .AuthBlack h1{
+        text-align: center;
+        color: white;
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 991px) {
+    .Auth {
+        padding-right: 10px;
+        padding-left: 7px;
+    }
+    .AuthBlack {
+        padding-right: 10px;
+        padding-left: 7px;
+    }
+    .Auth h1 {
+        text-align: center;
+        font-size: 19px;
+    }
+    .AuthBlack h1{
+        text-align: center;
+        color: white;
+        font-size: 19px;
+    }
+ 
+    .Auth form button {
+        margin: 7px;
+        font-size: 10px;
+        height: 25px;
+    }
+    .AuthBlack form button {
+        margin: 7px;
+        font-size: 10px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 680px) {
+    .Auth {
+        margin-right: 190px;
+        margin-left: 200px;
+    }
+    .AuthBlack {
+        margin-right: 190px;
+        margin-left: 200px;
+    }
+    .Auth form input {
+        margin: 10px;
+        width: 95%;
+    }
+    .AuthBlack form input {
+        margin: 10px;
+        width: 95%;
+    }
+    .Auth form button {
+        margin: 15px;
+    }
+    .AuthBlack form button {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 572px) {
+    .Auth {
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    .AuthBlack {
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+    .Auth h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .AuthBlack h1{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Auth {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .AuthBlack {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
 }

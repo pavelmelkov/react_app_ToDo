@@ -4,15 +4,47 @@
     left: 40px;
     font-size: 20px;
     cursor: pointer;
-    color: rgb(255, 228, 228);
+    color: rgb(114, 114, 114);
     z-index: 100;
     transition: opacity, left .22s ease-in;
 }
-
+.MenuToggleBlack{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    z-index: 100;
+    transition: opacity, left .22s ease-in;
+}
 .MenuToggle:hover {
     opacity: .7 ;
 }
-
 .MenuToggle.open {
     left: 340px;
+}
+.MenuToggleBlack:hover {
+    opacity: .7 ;
+}
+.MenuToggleBlack.open {
+    left: 340px;
+}
+
+@media (max-width: 572px) {
+    .MenuToggleBlack.open {
+        left: 230px;
+    }
+    .MenuToggle.open {
+        left: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MenuToggleBlack.open {
+        left: 200px;
+    }
+    .MenuToggle.open {
+        left: 200px;
+    }
 }

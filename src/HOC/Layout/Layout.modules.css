@@ -2,10 +2,224 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 }
-
 .Layout main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
+.Layout.White {
+    animation-name: headerWhite;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+.Layout.Black {
+    /* background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
+    animation-name: headerBlack;
+    animation-duration: .7s;
+    animation-fill-mode: forwards; 
+}
+.styleButton {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.author {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 9px;
+    font-style: italic;
+}
+@keyframes headerBlack {
+    0% {
+        opacity: 0;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    20% {
+        opacity: .3;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    33% {
+        opacity: .5;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    50% {
+        opacity: .7;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    66% {
+        opacity: .8;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    80% {
+        opacity: .9;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+    100% {
+        opacity: 1;
+        background: #0F2027;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+}
+@keyframes headerWhite {
+    0% {
+        opacity: 0;
+        background: #A1FFCE;  
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE); 
+    }
+    33% {
+        opacity: .33;
+        background: #A1FFCE;  
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE); 
+    }
+    66% {
+        opacity: .66;
+        background: #A1FFCE;  
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE); 
+    }
+    100% {
+        opacity: 1;
+        background: #A1FFCE;  
+        background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  
+        background: linear-gradient(to right, #FAFFD1, #A1FFCE); 
+    }
+}
+@media (max-width: 480px) {
+    .author {
+        position: absolute;
+        left: 20px;
+        bottom: 2px;
+        font-size: 5px;
+        font-style: italic;
+    }
+}
+
+.MenuToggle {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(114, 114, 114);
+    z-index: 100;
+    transition: opacity, left .22s ease-in;
+}
+.MenuToggleBlack{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(216, 216, 216);
+    z-index: 100;
+    transition: opacity, left .22s ease-in;
+}
+.MenuToggle:hover {
+    opacity: .7 ;
+}
+.MenuToggle.open {
+    left: 340px;
+}
+.MenuToggleBlack:hover {
+    opacity: .7 ;
+}
+.MenuToggleBlack.open {
+    left: 340px;
+}
+
+@media (max-width: 572px) {
+    .MenuToggleBlack.open {
+        left: 230px;
+    }
+    .MenuToggle.open {
+        left: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    .MenuToggleBlack.open {
+        left: 200px;
+    }
+    .MenuToggle.open {
+        left: 200px;
+    }
+}
+
+.Drawer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 300px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background: #fff;
+    transform: translateX(0px);
+    transition: transform .22s ease-in;
+    z-index: 90;
+}
+.Drawer.close {
+    transform: translateX(-300px);
+}
+.Drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Drawer ul li {
+    margin-bottom: 15px;
+}
+.Drawer ul li a {
+    color: #363d54;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #fff;
+    position: relative;
+    padding: 0 20px 10px 20px;
+    transition: opacity .3s;
+}
+.Drawer ul li a:hover, .active {
+    opacity: .7;
+}
+
+@media (max-width: 480px){
+    .Drawer {
+        max-width: 160px;
+    }
+    .Drawer.close {
+        transform: translateX(-200px);
+    }
+}
+
+@media (max-width: 572px){
+    .Drawer {
+        max-width: 190px;
+    }
+    .Drawer.close {
+        transform: translateX(-200px);
+    }
+}
+

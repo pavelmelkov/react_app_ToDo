@@ -1,0 +1,97 @@
+.TaskOne {
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.TaskOneBlack {
+    padding-top: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.TaskOne h2 {
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+.TaskOneBlack h2 {
+    text-align: center;
+    border: 2px solid rgb(160, 160, 160);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(218, 216, 236);
+}
+.TaskOneBlack h1 {
+    color: rgb(196, 193, 224);
+    text-align: center;
+}
+.AroundLink {
+    display: flex;
+    justify-content: center;
+}
+.toHome {
+    margin-top: 100px;
+    display: block;
+    padding: 12px;
+    width: 600px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow:  0 4px 5px 0 rgba(0, 0, 0, .14);
+    text-align: center;
+    cursor: 'pointer';
+    transition: border, box-shadow .3s;
+}
+.toHome:hover {
+    border: 1px solid rgb(158, 158, 158);
+    box-shadow:  0 6px 10px 0 rgba(0, 0, 0, .2);
+}
+.toHome strong {
+    color: black;
+}
+.toHomeBlack {
+    margin-top: 100px;
+    display: block;
+    padding: 12px;
+    width: 600px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow:  0 4px 5px 0 rgba(175, 175, 175, 0.14);
+    text-align: center;
+    cursor: 'pointer';
+    transition: border, box-shadow .3s;
+}
+.toHomeBlack:hover {
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow:  0 6px 15px 0 rgba(100, 100, 100, 0.3);
+}
+.toHomeBlack strong {
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 1200px) {
+    .toHome {
+        width: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .toHome {
+        width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .toHome {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .toHome {
+        width: 200px;
+    }
+}

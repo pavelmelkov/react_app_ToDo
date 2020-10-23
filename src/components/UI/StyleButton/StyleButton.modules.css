@@ -1,0 +1,132 @@
+.Button.white {
+    display: block;
+    padding: 5px 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid rgb(212, 212, 212);
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    height: 36px;
+    width: 36px;
+    transition: border, box-shadow .3s;
+    box-shadow: 0 4px 7px 0 rgba(68, 68, 68, 0.25);
+}
+.Button.white:focus {
+    outline: none;
+}
+.Button.white:active {
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+}
+.Button.white:hover {
+    box-shadow: 0 9px 15px 0 rgba(29, 29, 29, 0.25);
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.Button.black {
+    display: block;
+    padding: 5px 5px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 2px solid rgb(87, 87, 87);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 12px;
+    height: 36px;
+    width: 36px;
+    transition: border, box-shadow .3s;
+}
+.Button.black:focus {
+    outline: none;
+}
+.Button.black:active {
+    box-shadow: inset 2px 2px 1px rgba(228, 228, 228, 0.3);
+}
+.Button.black:hover {
+    box-shadow: 0 5px 12px 0 rgba(221, 221, 221, 0.25);
+    cursor: pointer;
+    border: 1px solid rgb(87, 87, 87);
+}
+.Together{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* @media screen and (min-width: 600px) {
+
+} */
+@media (max-width: 680px) {
+    .Button.white {
+        display: block;
+        padding: 5px 5px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border: 2px solid rgb(212, 212, 212);
+        color: #000;
+        font-weight: bold;
+        font-size: 12px;
+        height: 32px;
+        width: 32px;
+        transition: border, box-shadow .3s;
+        box-shadow: 0 4px 7px 0 rgba(68, 68, 68, 0.25);
+    }
+    .Button.white:focus {
+        outline: none;
+    }
+    .Button.white:active {
+        box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+    }
+    .Button.white:hover {
+        box-shadow: 0 9px 15px 0 rgba(29, 29, 29, 0.25);
+        cursor: pointer;
+        border: 1px solid #ccc;
+    }
+    .Button.black {
+        display: block;
+        padding: 5px 5px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border: 2px solid rgb(87, 87, 87);
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 12px;
+        height: 32px;
+        width: 32px;
+        transition: border, box-shadow .3s;
+    }
+    .Button.black:focus {
+        outline: none;
+    }
+    .Button.black:active {
+        box-shadow: inset 2px 2px 1px rgba(228, 228, 228, 0.3);
+    }
+    .Button.black:hover {
+        box-shadow: 0 5px 12px 0 rgba(221, 221, 221, 0.25);
+        cursor: pointer;
+        border: 1px solid rgb(87, 87, 87);
+    }
+    .Together{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 25px;
+        margin-top: 27px;
+    }
+}
+@media (max-width: 572px) {
+    .Button.white {
+        display: none;
+    }
+    .Button.black {
+        display: none;
+    }
+    .Together p{
+        display: none;
+    }
+
+}

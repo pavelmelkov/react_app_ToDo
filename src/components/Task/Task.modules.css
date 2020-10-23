@@ -1,0 +1,179 @@
+.Task {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.IconWrapper{
+    display: block;
+}
+.descr {
+    padding-left: 165px;
+    padding-right: 165px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.checked {
+    text-decoration: line-through;
+}
+.Edit {
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.Checked {
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.Delete {
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+.WhiteTheme {
+    color: black;
+}
+.BlackTheme {
+    color: rgb(214, 211, 238);
+}
+.whiteIcon {
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .descr {
+        padding-left: 115px;
+        padding-right: 115px;
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+    .Edit {
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Checked {
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Delete {
+        right: 1%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+}
+
+@media (max-width: 767px) {
+    .descr {
+        padding-left: 80px;
+        padding-right: 80px;
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+    .Edit {
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Checked {
+        right: 9%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Delete {
+        right: -10px;
+        top: 50%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 572px) {
+    .descr {
+        padding-left: 60px;
+        padding-right: 60px;
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+    .Edit {
+        left: 3%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Checked {
+        right: 7%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Delete {
+        right: -12px;
+        top: 50%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 480px) {
+    .descr {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+    .Edit {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Checked {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .Delete {
+        right: -17px;
+        top: 50%;
+        position: absolute;
+    }
+    .IconWrapper{
+        display: flex;
+        position: relative;
+    }
+    .Edit i{
+        top: -5px;
+        right: 2px;
+        width: 3px;
+        height: 3xp;
+        position: absolute;
+    }
+    .Checked i{
+        top: -5px;
+        right: 2px;
+        width: 3px;
+        height: 3xp;
+        position: absolute;
+    }
+    .Delete i{
+        top: -5px;
+        right: 2px;
+        width: 3px;
+        height:3xp;
+        position: absolute;
+    }
+}
