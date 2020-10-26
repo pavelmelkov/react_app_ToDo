@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "homepage": "http://pavelmelkov.github.io/react_app_ToDo",
     "@typescript-eslint/parser": "^2.10.0",
     "axios": "^0.20.0",
     "babel-eslint": "10.1.0",
@@ -69,7 +70,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -88,7 +91,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
   "author": "",
   "license": "ISC",
   "jest": {
